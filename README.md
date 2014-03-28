@@ -6,12 +6,11 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'baywatch', :git => https://github.com/croudcare/baywatch.git
+    gem 'baywatch'
 
 And then execute:
 
     $ bundle
-
 
 ## Usage
 
