@@ -35,12 +35,11 @@ Declarative way to error handling inside controller
     end
     
     def index
-      @users = Users.all
+      @users = UserRemoteService.all
     end
     
     def create
-      @user = User.create(params[:user])
-      @user.save
+      UserRemoteService.create(params[:user])
     end
     
   end
@@ -63,12 +62,11 @@ Using #only to use the same behavior to many actions.
     end
     
     def index
-      @users = Users.all
+      @users = UserRemoteService.all
     end
     
     def create
-      @user = User.create(params[:user])
-      @user.save
+      UserRemoteService.create(params[:user])
     end
     
   end
@@ -76,9 +74,8 @@ Using #only to use the same behavior to many actions.
 ````
 
 
-
-
 ### TODO
+
 ##### Handle Contextual Exception
  
  ```

@@ -17,11 +17,11 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency "rspec"
-  gem.add_development_dependency "mocha"
+  gem.add_development_dependency "rspec", '~> 2.14.1'
+  gem.add_development_dependency "mocha", '~> 1.0.0'
   gem.add_development_dependency "actionpack"
   gem.add_development_dependency 'rspec-rails'
-  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'pry', '~> 0.9.12.6'
   gem.add_development_dependency 'activemodel'
 
 end
